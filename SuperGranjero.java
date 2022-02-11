@@ -12,7 +12,7 @@ public class SuperGranjero extends Aldeano {
     }
 
     @Override
-    public int daño(Aldeano atacar) {
+    public double  daño(Aldeano atacar) {
         return 0;
     }
 }

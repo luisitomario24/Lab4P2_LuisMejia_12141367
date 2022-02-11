@@ -10,7 +10,7 @@ public class Agronomo extends Aldeano {
     }
 
     @Override
-    public int daño(Aldeano atacar) {
+    public double  daño(Aldeano atacar) {
         return 0;
     }
 }

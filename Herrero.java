@@ -18,8 +18,19 @@ public class Herrero extends Aldeano{
     }
 
     @Override
-    public int daño(Aldeano atacar) {
-        return 0;
+    public double daño(Aldeano atacar) {
+        //Los aldeanos de tipo herrero tienen mas o menos daño dependiendo a quien le esten haciendo daño
+        if(atacar instanceof Pacifista){
+            return super.getAtaque()*1.1;
+        }
+        //en el caso de que el herrero pelee contra un agronomo el daño es diferente
+        else if (atacar instanceof Agronomo){
+            return super.getAtaque()*1.05;
+        }
+        // de pelear contra otro tipo de aldeano pues su daño sera el establecido por defecto
+        return  super.getAtaque();
+
+
     }
 
 }

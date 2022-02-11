@@ -21,7 +21,7 @@ public abstract class Aldeano {
         this.vida = vida;
     }
 
-    public abstract int daño(Aldeano atacar);
+    public abstract double  daño(Aldeano atacar);
 
     public String getNombre() {
         return nombre;

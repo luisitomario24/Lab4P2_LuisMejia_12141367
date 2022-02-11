@@ -6,7 +6,14 @@ public class Explosivo extends Aldeano {
     }
 
     @Override
-    public int daño(Aldeano atacar) {
-        return 0;
+    public double  daño(Aldeano atacar) {
+        if(atacar instanceof Herrero){
+            return super.getAtaque()*1.05;
+        }
+        if (atacar instanceof Agronomo){
+            return super.getAtaque()*1.1;
+        }
+
+        return super.getAtaque();
     }
 }

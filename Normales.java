@@ -12,7 +12,11 @@ public class Normales extends Aldeano {
     }
 
     @Override
-    public int daño(Aldeano atacar) {
+    public double daño(Aldeano atacar) {
+        ////si el aldeano normal ataca al pacifista
+        if (atacar instanceof Pacifista )
+            //Agarramos los puntos de ataque que genera por golpe el aldeano normal y lo multiplicamos por 1.05 porque contra pacifistas el daño aumenta
+            return super.getAtaque()*1.05;
         return 0;
     }
 }

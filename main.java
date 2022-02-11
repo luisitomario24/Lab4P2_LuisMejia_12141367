@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class main {
 
     public static void main(String[] args) {
+        String apellido_familia="";
         //Creamos un array lista para almacenar algunos usuarios por defecto de las familias
         ArrayList<Aldeano>famMontesco=new ArrayList();
         //Creamos a romero como el unico superGranjero
@@ -19,11 +20,13 @@ public class main {
         famCapuleto.add(new Herrero("Diego","capuleto",12,600));
         famCapuleto.add(new Agronomo("Manuel","capuleto",14,600));
 
-        //Creamos otra familia por defecto
+        //Creamos otra familia por defecto en este caso la mia
         ArrayList<Aldeano>familamejia=new ArrayList();
         Aldeano Luismario=new Agronomo("Luis","mejia",19,200);
 
-
+        //creamos un arrayList para las familas
+        ArrayList<Familias>General=new ArrayList<Familias>();
+        General.add(new Familias(apellido_familia));
     }
 
 }
