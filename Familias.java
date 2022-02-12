@@ -31,7 +31,7 @@ public class Familias {
         return apellido_familia;
     }
 
-    public void setLinaje(String apellido_familia) {
+    public void setApellido_familia(String apellido_familia) {
         this.apellido_familia = apellido_familia;
     }
 
